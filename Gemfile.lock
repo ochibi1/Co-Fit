@@ -242,7 +242,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise
-  haml-rails
+  haml-rails (~> 2.0)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   mysql2 (= 0.5.3)
