@@ -1,0 +1,75 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper{
+  background: linear-gradient(113deg, #dccbf4, #a1ffce, #faffd1);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 57s ease infinite;
+  -moz-animation: AnimationName 57s ease infinite;
+  -o-animation: AnimationName 57s ease infinite;
+  animation: AnimationName 57s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 25%}
+  50%{background-position:100% 76%}
+  100%{background-position:0% 25%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 25%}
+  50%{background-position:100% 76%}
+  100%{background-position:0% 25%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 25%}
+  50%{background-position:100% 76%}
+  100%{background-position:0% 25%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 25%}
+  50%{background-position:100% 76%}
+  100%{background-position:0% 25%}
+}
+
+.header{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo{
+    height: 40px;
+    width: 100px;
+    background-color: #fefefe;
+    margin: 20px;
+  }
+  .search-box{
+    height: 40px;
+    width: 100px;
+    background-color: #fefefe;
+    margin: 20px;
+  }
+  .item{
+    height: 40px;
+    width: 100px;
+    background-color: #fefefe;
+    margin: 20px;
+  }
+}
+
+.body{ 
+  height: 100vh;
+  margin: 10px 40px;
+  .ranking{
+    width: 90vw;
+    height: 150px;
+    background-color: whitesmoke;
+  }
+  .post{
+    width: 90vw;
+    height: calc(100vh - 70px);
+    background-color: white;
+  }
+}
