@@ -1,6 +1,6 @@
 # README
 
-## Userテーブル
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, unique: true|
@@ -9,61 +9,61 @@
 |image|string||
 |introduction|text||
 ### Association
-- has_many :Tweet
-- has_many :Comment
-- has_many :Like
+- has_many :tweets
+- has_many :comments
+- has_many :likes
 
 
-## Tweetテーブル
+## tweetsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |message|text|null: false|
 |image|string||
 |user|references|null: false, foreign_key: true|
 ### Association
-- has_many :Tag, through :Tweet_Tag
-- has_many :Comment
-- belongs_to :User
+- has_many :tags, through :tweets_tags
+- has_many :comments
+- belongs_to :users
 
 
-## Commentテーブル
+## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |reply|string|null: false|
 |user|references|null: false, foreign_key: true|
 |tweet|references|null: false, foreign_key: true|
 ### Association
-- belongs_to :Tweet
-- belongs_to :User
+- belongs_to :tweets
+- belongs_to :users
 
 
-## Tagテーブル
+## tagsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |body|string||
 ### Association
-- has_many :Tweet, through :Tweet_Tag
-- has_many :Tweet_Tag
+- has_many :tweets, through :tweets_tags
+- has_many :tweets_tags
 
 
-## Tweet_Tagテーブル
+## tweets_tagsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |tweet|references|null: false, foreign_key: true|
 |tag|references|null: false, foreign_key: true|
 ### Association
-- belongs_to :Tweet
-- belongs_to :Tag
+- belongs_to :tweets
+- belongs_to :tags
 
 
-## Likeテーブル
+## likesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user|references|null: false, foreign_key: true|
 |tweet|references|null: false, foreign_key: true|
 ### Association
-- belongs_to :User
-- belongs_to :Tweet
+- belongs_to :users
+- belongs_to :tweets
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
