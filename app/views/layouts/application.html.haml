@@ -9,10 +9,7 @@
     -# = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     -# = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    -# %p.notice 
-    -#   Notice 
-    -# %p.alert
-    -#   Alert
+    = render 'layouts/body'
     = yield
   %footer.footer
     ©︎ S-Shintani 2020.
