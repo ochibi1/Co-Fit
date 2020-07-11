@@ -56,7 +56,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'pry-rails'
 gem "haml-rails", "~> 2.0"
-gem 'carrierwave'
-gem 'mini_magick'
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+gem "refile-mini_magick"
 gem 'font-awesome-sass'
 gem 'jquery-rails'
