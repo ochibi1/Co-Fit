@@ -1,0 +1,9 @@
+-# .post
+-#   .content
+-#     = form_with model: @tweet, local: true do |f|
+-#       .box
+-#         =f.text_field :body, class: 'main-chat__footer__form--text-field', placeholder: "type a message"
+-#         =f.label :image, class: 'main-chat__footer__form--label' do
+-#           =icon('far', 'image')
+-#           =f.file_field :image, class: 'file'
+-#       =f.submit 'Send', class: 'main-chat__footer__form--submit'

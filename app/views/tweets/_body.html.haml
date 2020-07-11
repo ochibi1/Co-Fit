@@ -4,4 +4,5 @@
       Continuators Ranking!!!
     .ranking__list
   .post
-  -# 投稿された日付が新しい順に上に表示される
+    - @tweets.each do |tweet|
+      = tweet

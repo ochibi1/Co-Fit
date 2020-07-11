@@ -1,9 +1,11 @@
-.header
-  .logo
+.columns
+  .column
     Co-Fit
-  .search-box
-  -# 検索バーを入力し、インクリメンタルサーチ機能をつける
-    -# = form_with model: , placeholder: "search"
-    -#   = form= f.text_field method, {}
-  .item
-  -# 新規投稿画面に移行するアイコン・my profile画面に移行するアイコン・余力があればイイねの一覧に推移するアイコン
+  .column
+    検索バー
+    -# = form_with model: @tweet,  |f|
+    -#   = f.text_field :, {} placeholder: "search"
+  .column
+    アイコン
+    -# =link_to "#"
+    -#   =icon('far', 'image')
