@@ -6,7 +6,7 @@
 |name|string|null: false, unique: true|
 |password|string|null: false, unique: true|
 |email|string||
-|image|string||
+|profile_image|string||
 |introduction|text||
 ### Association
 - has_many :tweets
