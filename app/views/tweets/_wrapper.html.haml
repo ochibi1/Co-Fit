@@ -1,0 +1,23 @@
+.header.navbar.columns.is-primary
+  .navbar-brand.column    
+    %span.navbar-item
+      %i.fa.fas-walking Co-Fit 
+  .navbar-end.column
+    .navbar-item
+      .field-has-addons
+        .control  
+          %input.input{type: "text", name: "search", placeholder: "search"}
+        .control
+          -# = link_to "#", method: , class: do
+          -#   %i.fa.fa-search  or  =icon('', '')
+  .navbar-item.column
+    Login
+
+.body.hero.is-fullheight.has-background-black
+  .ranking.hero-body
+    .ranking__title
+      Continuators Ranking!!!
+    .ranking__list
+  .post
+    - @tweets.each do |tweet|
+      = tweet.message

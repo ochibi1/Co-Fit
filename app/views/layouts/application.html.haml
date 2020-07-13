@@ -1,5 +1,5 @@
 !!!
-%html.has-text-centered
+%html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Co-Fit
@@ -8,8 +8,16 @@
     -# = csp_meta_tag
     -# = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     -# = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+-#     %style
+
+-# .center{
+-#     display: flex;
+-#     justify-content: center;
+-#     align-items: center;
+-# }
+
   %body
     = render 'layouts/body'
     = yield
-  %footer.footer
+  %footer.footer.is-centered
     ©︎ S-Shintani 2020.
